@@ -1,72 +1,89 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/🎬_AURA_CINEMATIC-Premium_Portfolio-e5c158?style=for-the-badge&logo=film&logoColor=white&labelColor=0a0a0a">
-  <img alt="AURA CINEMATIC" src="https://img.shields.io/badge/🎬_AURA_CINEMATIC-Premium_Portfolio-e5c158?style=for-the-badge&logo=film&logoColor=white&labelColor=f2f2f2">
+  <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/🎬_AURA_CINEMATIC-Editorial_Portfolio-e5c158?style=for-the-badge&logo=film&logoColor=0a0a0a&labelColor=0a0a0a">
+  <img alt="AURA CINEMATIC" src="https://img.shields.io/badge/🎬_AURA_CINEMATIC-Editorial_Portfolio-e5c158?style=for-the-badge&logo=film&logoColor=f2f2f2&labelColor=f2f2f2">
 </picture>
 
 # ✦ AURA CINEMATIC ✦
-### *Cinematic Documentary Portfolio*
+### *High-End Editorial Documentary Portfolio Platform*
 
 <p align="center">
-  <em>Award-Winning • Independent • Documentary • Production</em>
+  <em>Premium • Production-Ready • Obsidian Aesthetic • Cinematic UX</em>
 </p>
 
 <br/>
 
+[![Live Demo](https://img.shields.io/badge/🔗_Live_Demo-Production-e5c158?style=flat-square&logo=vercel&logoColor=0a0a0a)](https://cinematic-documentary-portfolio.vercel.app/)
 [![React 19](https://img.shields.io/badge/⚛️_React-19.0.0-61DAFB?style=flat-square&logo=react&logoColor=1e1e1e)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/📘_TypeScript-5.8-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/⚡_Vite-6.2-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vite.dev/)
 [![Tailwind v4](https://img.shields.io/badge/🎨_Tailwind-v4.0-38BDF8?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Motion](https://img.shields.io/badge/🌀_Motion-12.23-FF007F?style=flat-square&logo=framer&logoColor=white)](https://motion.dev/)
 [![Docker](https://img.shields.io/badge/🐳_Docker-Ready-2496ED?style=flat-square&logo=docker&logoColor=white)](https://www.docker.com/)
+[![License](https://img.shields.io/badge/📜_License-MIT-222222?style=flat-square&logo=github&logoColor=white)](LICENSE)
 
 <br/>
 
-[🚀 Live Demo](#-live-demo) • [📦 Installation](#-installation) • [🎨 Design](#-design-system) • [🌐 Deploy](#-deployment) • [🐳 Docker](#-docker-support)
+[🚀 Quick Start](#-quick-start) • [🎨 Design](#-design-system) • [🛠️ Tech](#-technical-stack) • [📁 Structure](#-project-structure) • [🌐 Deploy](#-deployment) • [🐳 Docker](#-containerization)
 
-<hr style="border: 0; height: 1px; background: linear-gradient(90deg, transparent, #e5c158, transparent); margin: 2rem 0;">
+<hr style="border: 0; height: 1px; background: linear-gradient(90deg, transparent, #e5c158, #38bdf8, #e5c158, transparent); margin: 2.5rem 0;">
 
 </div>
 
+<!-- TABLE OF CONTENTS -->
+<details open>
+  <summary><strong>📑 Navigate This Document</strong></summary>
+  <br/>
+  <ol>
+    <li><a href="#-architectural-overview">🎞️ Architectural Overview</a></li>
+    <li><a href="#-core-features--ux-mechanics">✨ Core Features & UX Mechanics</a></li>
+    <li><a href="#-mathematical-layout--viewport-dynamics">📐 Mathematical Layout & Viewport Dynamics</a></li>
+    <li><a href="#-technical-stack--specifications">🛠️ Technical Stack & Specifications</a></li>
+    <li><a href="#-project-structure">📁 Project Structure</a></li>
+    <li><a href="#-quick-start">🚀 Quick Start</a></li>
+    <li><a href="#-deployment">🌐 Production Deployment</a></li>
+    <li><a href="#-containerization--nginx-architecture">🐳 Containerization & Nginx Architecture</a></li>
+    <li><a href="#-ci-cd-pipeline">🔄 CI/CD Pipeline</a></li>
+    <li><a href="#-license--contact">📜 License & Contact</a></li>
+  </ol>
+</details>
+
 ---
 
-## 🎬 Project Overview
+## 🎞️ Architectural Overview
 
 <div align="center">
 
 ```diff
-+ Where storytelling meets digital elegance.
++ Where cinematic storytelling meets engineered precision.
 ```
 
 </div>
 
-**AURA CINEMATIC** is a premium editorial portfolio crafted for independent documentary production companies. This immersive, single-page application combines cinematic aesthetics with cutting-edge web technology to create a powerful hub for:
+**AURA CINEMATIC** is a high-performance Single Page Application engineered to mirror the visual weight and narrative depth of physical film festival lookbooks. Built on **React 19**, **TypeScript 5.8**, and **Vite 6**, the system prioritizes:
 
-| 🎯 Purpose | ✨ Experience | 🚀 Performance |
-|-----------|--------------|----------------|
-| Client Acquisition | Obsidian Minimalist Design | Lightning-Fast Loads |
-| Film Showcases | Immersive Hover Effects | Optimized Asset Loading |
-| Subcultural Chronicles | Cinematic Lightboxes | SPA Navigation |
-| Industry Networking | Keyboard-First UX | Production-Ready Build |
-
-> *"A digital gallery that feels like walking through a film festival—every frame, every transition, every interaction designed to captivate."*
+| Pillar | Description | Implementation |
+|--------|-------------|----------------|
+| **🎨 Obsidian Aesthetic** | Maximum contrast layout for visual media prominence | Deep black (`#0a0a0a`) + Ice silver (`#f2f2f2`) + Gold accents (`#e5c158`) |
+| **🧩 Component Decoupling** | Separation of structural layouts from relational content | Static collections via `src/data.ts` with typed schemas |
+| **⚡ Instant Asset Presentation** | Zero-layout-shift loading with optimized media pipelines | GPU-accelerated CSS, lazy loading, responsive srcsets |
+| **🎯 Responsive Fluid Grids** | Adaptive layouts across unpredictable viewports | CSS Container Queries + dynamic aspect-ratio calculations |
 
 ---
 
-## ✨ Feature Spotlight
+## ✨ Core Features & UX Mechanics
 
 <div align="center">
 
-| Feature | Description | Visual Cue |
-|---------|-------------|------------|
-| 🎥 **Editorial Filmography** | Advanced filtering, deep search, crew listings, ratings & reviews | `Dynamic Grid` |
-| 🏔️ **Cinematic Hover FX** | Grayscale→Color transitions + subtle scale/zoom on project cards | `Smooth Motion` |
-| 🎵 **Music Chronicles** | Dedicated section for acoustic geography & subcultural soundscapes | `Curated Collection` |
-| 🍿 **Lightbox Cinema** | Full-screen video overlays for showreels, Vimeo & YouTube | `Seamless Playback` |
-| ⚡ **Animated Stats** | CountUp counters + interactive studio timeline | `Living Data` |
-| 📩 **Smart Inquiry Builder** | Tailored contact forms for partners, buyers & festival scouts | `Context-Aware` |
-| 🎹 **Keyboard Navigation** | Shortcuts: `H`ome, `W`ork, `M`usic, `A`bout, `C`ontact, `?` Help | `Power User Ready` |
+| Feature | Technical Implementation | User Experience |
+|---------|-------------------------|-----------------|
+| **🎛️ Multilayered Content Sorting** | Client-side filtering across `category`, `tags`, `director` fields | Instant search across synopses, titles, crew metadata |
+| **🏔️ Grayscale→Color Hover FX** | GPU-accelerated `filter: grayscale(1) → grayscale(0)` + `scale(1.03)` | Cinematic 700ms shutter-like reveal on project cards |
+| **🍿 Full-Screen Lightboxes** | State-trapped overlays with focus management | Seamless YouTube/Vimeo playback without route resets |
+| **⌨️ Keyboard Navigation** | Global `keydown` listeners with spatial mapping | Power-user shortcuts: `H`ome, `W`ork, `M`usic, `A`bout, `C`ontact, `?` Help |
+| **⚡ CountUp Statistics** | `requestAnimationFrame`-driven numerical interpolation | Smooth animated counters for films, awards, countries |
+| **📩 Smart Inquiry Builder** | Multi-step form with conditional field rendering | Tailored contact flows for distributors, festivals, partners |
 
 </div>
 
@@ -74,270 +91,263 @@
 
 <div align="center">
 
-| Key | Action | Icon |
-|-----|--------|------|
-| `H` | Navigate to Home | 🏠 |
-| `W` | Browse Selected Work | 🎬 |
-| `M` | Explore Music Docs | 🎵 |
-| `A` | View About / Timeline | ℹ️ |
-| `C` | Open Contact Form | ✉️ |
-| `?` | Toggle Help Overlay | ❓ |
-| `Esc` | Close Modals / Lightboxes | ✕ |
+| Key | Action | Visual Feedback |
+|-----|--------|----------------|
+| `H` | Navigate to **Home** | Smooth scroll to hero section |
+| `W` | Open **Selected Work** | Filter grid with fade transition |
+| `M` | Load **Music Chronicles** | Audio-themed layout swap |
+| `A` | Display **About/Timeline** | Animated vertical chronicle |
+| `C` | Focus **Contact Form** | Form field highlight + scroll |
+| `?` | Toggle **Help Overlay** | Modal with shortcut legend |
+| `Esc` | Close modals/lightboxes | Focus return + fade exit |
 
 </div>
 
 ---
 
-## 🛠️ Technical Architecture
+## 📐 Mathematical Layout & Viewport Dynamics
 
-```mermaid
-graph LR
-    A[React 19 + TypeScript] --> B[Vite 6.2 Build]
-    B --> C[Tailwind CSS v4]
-    C --> D[Motion Animations]
-    D --> E[Lucide Icons]
-    E --> F[Production Build]
-    F --> G[Dist/ Static Assets]
-    G --> H[Netlify/Vercel/Docker]
+To preserve strict formatting symmetry across unpredictable browser viewports, fluid media grid dimensions compute dynamically using aspect-ratio preservation algorithms.
+
+### Aspect Ratio Calculation
+
+$$A_r = \frac{W_{\text{viewport}}}{H_{\text{viewport}}}$$
+
+### Grid Dimension Formula
+
+$$G_d = \left( \sum_{i=1}^{n} P_i \cdot C_{\text{factor}} \right) + \Delta_{\text{padding}}$$
+
+**Where:**
+| Variable | Description | Example Value |
+|----------|-------------|---------------|
+| $P_i$ | Baseline aspect scale of portfolio slot | `16:9`, `4:3`, `1:1` |
+| $C_{\text{factor}}$ | Dynamic scaling from CSS container queries | `0.8` – `1.2` |
+| $\Delta_{\text{padding}}$ | Visual whitespace buffer | `2rem` responsive |
+
+### Responsive Breakpoints
+
+```css
+/* Tailwind v4 container query approach */
+@container (min-width: 768px) {
+  .project-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@container (min-width: 1280px) {
+  .project-grid { grid-template-columns: repeat(3, 1fr); }
+}
 ```
-
-### Core Dependencies
-
-| Package | Version | Purpose |
-|---------|---------|---------|
-| `react` | `^19.0.0` | UI Framework |
-| `typescript` | `^5.8.0` | Type Safety |
-| `vite` | `^6.2.0` | Build Tooling |
-| `tailwindcss` | `^4.0.0` | Utility-First Styling |
-| `motion` | `^12.23.0` | Physics-Based Animations |
-| `lucide-react` | `latest` | Consistent Iconography |
 
 ---
 
-## 🎨 Design System
+## 🛠️ Technical Stack & Specifications
 
 <div align="center">
 
-### Color Palette
+### Core Architecture
 
-<table>
-  <tr>
-    <td align="center" style="background:#0a0a0a; color:#f2f2f2; padding:1rem; border-radius:8px;">
-      <strong>Obsidian</strong><br/>
-      <code>#0a0a0a</code><br/>
-      <em>Primary Background</em>
-    </td>
-    <td align="center" style="background:#f2f2f2; color:#0a0a0a; padding:1rem; border-radius:8px;">
-      <strong>Ice Silver</strong><br/>
-      <code>#f2f2f2</code><br/>
-      <em>Primary Text</em>
-    </td>
-    <td align="center" style="background:#e5c158; color:#0a0a0a; padding:1rem; border-radius:8px;">
-      <strong>Cinematic Gold</strong><br/>
-      <code>#e5c158</code><br/>
-      <em>Accent & Highlights</em>
-    </td>
-  </tr>
-</table>
+| Tier | Technology | Purpose | Version |
+|:-----|:-----------|:--------|:--------|
+| **Framework** | [React](https://react.dev/) | UI Component Model | `19.0.0` |
+| **Language** | [TypeScript](https://www.typescriptlang.org/) | Type Safety & DX | `5.8` |
+| **Build Tool** | [Vite](https://vite.dev/) | Dev Server + Bundling | `6.2` |
+| **Styling** | [Tailwind CSS](https://tailwindcss.com/) | Utility-First Design | `v4.0` |
+| **Animations** | [Motion](https://motion.dev/) | Physics-Based Motion | `12.23` |
+| **Icons** | [Lucide React](https://lucide.dev/) | Consistent Iconography | `latest` |
 
-### Typography Stack
+### Deployment & Infrastructure
 
-```font
-Headings:    'Inter Tight', system-ui    → Bold, Spaced, Impactful
-Labels:      'JetBrains Mono', monospace → Technical, Precise, Sharp
-Body:        'Inter', system-ui          → Readable, Clean, Versatile
-```
-
-### Motion Principles
-
-- **Duration**: `700ms` cinematic ease for major transitions
-- **Easing**: `cubic-bezier(0.4, 0, 0.2, 1)` for natural motion
-- **Hover**: Subtle scale (`1.02x`) + grayscale→color reveal
-- **Scroll**: Parallax-lite effects on hero sections
+| Service | Role | Configuration |
+|---------|------|---------------|
+| **Vercel** | Primary Hosting | Auto-detected Vite build, edge caching |
+| **Docker** | Containerization | Multi-stage build, Nginx serving |
+| **Nginx** | Static Asset Server | SPA routing, gzip, cache headers |
+| **GitHub Actions** | CI/CD | Typecheck, lint, build, deploy |
 
 </div>
 
 ---
 
-## 🚀 Installation & Development
+## 📁 Project Structure
 
-### Prerequisites
-```bash
-# Node.js v18.x or higher
-node -v  # >= v18.0.0
-
-# npm or yarn package manager
-npm -v   # >= 9.0.0
+```
+cinematic-documentary-portfolio/
+│
+├── 📦 public/
+│   ├── favicon.ico
+│   ├── robots.txt
+│   └── _redirects          # SPA client-side routing support
+│
+├── 📁 src/
+│   ├── 🧩 components/      # Reusable UI primitives
+│   │   ├── ImageWithFallback.tsx   # Lazy loader with placeholder states
+│   │   ├── Lightbox.tsx            # Focus-trapped full-viewport overlay
+│   │   ├── VideoModal.tsx          # YouTube/Vimeo embed handler
+│   │   ├── CountUp.tsx             # RAF-driven animated counter
+│   │   ├── Navbar.tsx              # Blur-backed translucent header
+│   │   ├── Footer.tsx              # Semantic credentials footer
+│   │   ├── ScrollProgress.tsx      # Linear top-bound progress indicator
+│   │   ├── ScrollToTop.tsx         # Smooth viewport reset utility
+│   │   └── KeyboardShortcutsHelp.tsx # Accessible shortcut legend modal
+│   │
+│   ├── 🖼️ pages/           # Route-level view components
+│   │   ├── Home.tsx                # Hero showreel + featured projects
+│   │   ├── SelectedWork.tsx        # Filterable grid with tag arrays
+│   │   ├── MusicDocs.tsx           # Acoustic geography showcase
+│   │   ├── About.tsx               # Interactive timeline + studio metrics
+│   │   └── Contact.tsx             # Multi-step inquiry builder
+│   │
+│   ├── 🗂️ types.ts         # TypeScript interfaces & data schemas
+│   ├── 🗄️ data.ts          # Single source of truth for filmography
+│   ├── 🎨 index.css        # Global Tailwind imports + font configs
+│   └── ⚡ main.tsx         # Application bootstrap + root render
+│
+├── ⚙️ vite.config.ts       # Build optimization + plugin config
+├── 📦 package.json         # Dependencies + lifecycle scripts
+├── 🐳 Dockerfile           # Multi-stage production container
+├── 🌐 nginx.conf          # Optimized static serving + SPA routing
+├── 🔧 .github/workflows/  # GitHub Actions CI/CD definitions
+└── 📄 README.md           # You are here ✨
 ```
 
-### Quick Start
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
 
 ```bash
-# 1️⃣ Clone the repository
-git clone https://github.com/your-username/aura-cinematic-portfolio.git
-cd aura-cinematic-portfolio
+# Node.js LTS (v22.x recommended)
+node -v  # >= v22.0.0
+
+# Package manager
+npm -v   # >= 10.0.0
+# or
+pnpm -v  # >= 9.0.0
+```
+
+### Installation Flow
+
+```bash
+# 1️⃣ Clone repository
+git clone https://github.com/mohdali-dev/cinematic-documentary-portfolio.git
+cd cinematic-documentary-portfolio
 
 # 2️⃣ Install dependencies
 npm install
 
-# 3️⃣ Start development server
+# 3️⃣ Launch development server
 npm run dev
 
-# ✨ Server runs at → http://localhost:3000
+# ✨ Access at → http://localhost:5173
 ```
 
 ### Available Scripts
 
 | Command | Description | Output |
 |---------|-------------|--------|
-| `npm run dev` | Launch Vite dev server with HMR | `localhost:3000` |
-| `npm run build` | Production build with optimizations | `dist/` folder |
+| `npm run dev` | Vite dev server with HMR | `localhost:5173` |
+| `npm run build` | Production build with optimizations | `dist/` directory |
 | `npm run preview` | Preview production build locally | `localhost:4173` |
-| `npm run lint` | Run ESLint + TypeScript checks | Terminal output |
-| `npm run typecheck` | Strict TypeScript compilation | Type errors |
+| `npm run lint` | ESLint + TypeScript type checks | Terminal diagnostics |
+| `npm run typecheck` | Strict TypeScript compilation | Type error report |
 
 ---
 
-## 📁 Project Blueprint
-
-```
-aura-cinematic-portfolio/
-│
-├── 📦 public/
-│   ├── favicon.ico
-│   ├── robots.txt
-│   └── _redirects          # SPA routing support
-│
-├── 📁 src/
-│   ├── 🧩 components/      # Reusable UI atoms & molecules
-│   │   ├── ImageWithFallback.tsx
-│   │   ├── Lightbox.tsx
-│   │   ├── VideoModal.tsx
-│   │   ├── CountUp.tsx
-│   │   ├── Navbar.tsx
-│   │   ├── Footer.tsx
-│   │   ├── ScrollProgress.tsx
-│   │   ├── ScrollToTop.tsx
-│   │   └── KeyboardShortcutsHelp.tsx
-│   │
-│   ├── 🖼️ pages/           # Route-level views
-│   │   ├── Home.tsx
-│   │   ├── SelectedWork.tsx
-│   │   ├── MusicDocs.tsx
-│   │   ├── About.tsx
-│   │   └── Contact.tsx
-│   │
-│   ├── 🗂️ types.ts         # TypeScript interfaces & schemas
-│   ├── 🗄️ data.ts          # Filmography, stats, metadata
-│   ├── 🎨 index.css        # Global styles & Tailwind imports
-│   └── ⚡ main.tsx         # Application entry point
-│
-├── ⚙️ vite.config.ts       # Build configuration
-├── 📦 package.json         # Dependencies & scripts
-├── 🐳 Dockerfile           # Multi-stage production image
-├── 🌐 nginx.conf          # Optimized static file serving
-└── 📄 README.md           # You are here ✨
-```
-
----
-
-## 🌐 Deployment Guide
+## 🌐 Production Deployment
 
 <div align="center">
 
-### 🟢 One-Click Deploy Options
+### 🟢 One-Click Deploy
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/aura-cinematic-portfolio)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/your-username/aura-cinematic-portfolio)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/mohdali-dev/cinematic-documentary-portfolio)
 
 </div>
 
-### Platform-Specific Instructions
+### Platform Configuration
 
 <details>
 <summary><strong>🔷 Vercel (Recommended)</strong></summary>
+<br/>
 
-```bash
-# Automatic detection - no config needed
-# Build Settings (auto-detected):
-#   Framework Preset: Vite
-#   Build Command: npm run build
-#   Output Directory: dist
-#   Install Command: npm install
-
-# Optional: Add environment variables in Vercel dashboard
+```json
+// vercel.json (auto-detected, optional overrides)
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "installCommand": "npm install",
+  "framework": "vite",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
 ```
 
-✅ **Pros**: Zero-config, preview deployments, edge functions ready  
-✅ **Best for**: Rapid iteration, team collaboration, production hosting
+✅ **Advantages**: Zero-config, preview deployments, edge functions, analytics  
+✅ **Best For**: Production hosting, team collaboration, rapid iteration
 
 </details>
 
 <details>
 <summary><strong>🔷 Netlify</strong></summary>
+<br/>
 
-```bash
-# Manual configuration:
-# Build command: npm run build
-# Publish directory: dist
-
-# Add public/_redirects file:
-/*    /index.html    200
-
-# Optional: netlify.toml for advanced config
+```toml
+# netlify.toml
 [build]
   command = "npm run build"
   publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
 ```
 
-✅ **Pros**: Form handling, serverless functions, split testing  
-✅ **Best for**: Marketing sites, form-heavy applications
+✅ **Advantages**: Form handling, serverless functions, split testing  
+✅ **Best For**: Marketing sites, form-heavy applications
 
 </details>
 
 <details>
 <summary><strong>🔷 GitHub Pages</strong></summary>
+<br/>
 
 ```bash
-# 1. Install gh-pages
+# Install gh-pages utility
 npm install -D gh-pages
 
-# 2. Update vite.config.ts
+# Update vite.config.ts
 export default defineConfig({
-  base: '/aura-cinematic-portfolio/', // repo name
+  base: '/cinematic-documentary-portfolio/', // repository name
   // ...other config
 })
 
-# 3. Add to package.json
+# Add to package.json scripts
 {
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
-  }
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
 }
 
-# 4. Deploy
+# Deploy
 npm run deploy
 ```
 
-✅ **Pros**: Free, integrated with GitHub, simple  
-✅ **Best for**: Personal projects, open-source portfolios
+✅ **Advantages**: Free, GitHub-integrated, simple workflow  
+✅ **Best For**: Personal projects, open-source portfolios
 
 </details>
 
 ---
 
-## 🐳 Docker Support
+## 🐳 Containerization & Nginx Architecture
 
-### Production-Ready Containerization
+### Multi-Stage Docker Build
 
 ```dockerfile
-# Multi-stage build for minimal image size
 # Stage 1: Build
-FROM node:18-alpine AS builder
+FROM node:22-alpine AS builder
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci
+RUN npm ci --omit=dev
 COPY . .
 RUN npm run build
 
@@ -349,101 +359,123 @@ EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
 ```
 
-### Quick Docker Commands
+### Local Container Workflow
 
 ```bash
-# 🏗️ Build the image
+# 🏗️ Build the production image
 docker build -t aura-cinematic:latest .
 
-# 🚀 Run the container
+# 🚀 Run with port mapping
 docker run -d \
   --name aura-portfolio \
   -p 8080:80 \
   --restart unless-stopped \
   aura-cinematic:latest
 
-# 🔍 View logs
+# 🔍 Stream logs
 docker logs -f aura-portfolio
 
-# 🛑 Stop & cleanup
+# 🛑 Cleanup
 docker stop aura-portfolio && docker rm aura-portfolio
 ```
 
-✅ **Benefits**: Consistent environments, easy scaling, production-optimized Nginx config with gzip, caching headers, and SPA routing support.
+### Nginx Configuration Highlights
 
----
+```nginx
+server {
+    listen 80;
+    server_name localhost;
 
-## 🧪 Testing & Quality
+    # SPA routing support
+    location / {
+        root /usr/share/nginx/html;
+        index index.html;
+        try_files $uri $uri/ /index.html;
+    }
 
-```bash
-# Type checking
-npm run typecheck
+    # Long-term caching for static assets
+    location ~* \.(?:css|js|woff2?|eot|ttf|svg|png|jpe?g|gif|ico)$ {
+        expires 6M;
+        add_header Cache-Control "public, immutable, max-age=15552000";
+        access_log off;
+    }
 
-# Linting
-npm run lint
-
-# Build validation
-npm run build
-
-# Preview production build
-npm run preview
+    # Gzip compression for text-based assets
+    gzip on;
+    gzip_types text/plain text/css application/json application/javascript;
+    gzip_min_length 1000;
+}
 ```
 
-### Browser Support
-
-<div align="center">
-
-| Chrome | Firefox | Safari | Edge | Mobile |
-|--------|---------|--------|------|--------|
-| ✅ 120+ | ✅ 115+ | ✅ 17+ | ✅ 120+ | ✅ iOS 16+, Android 13+ |
-
-</div>
+✅ **Benefits**: Minimal image size, production-optimized caching, SPA routing support, gzip compression
 
 ---
 
-## 🗺️ Roadmap
+## 🔄 CI/CD Pipeline
+
+### GitHub Actions Workflow (`.github/workflows/ci-cd.yml`)
+
+```yaml
+name: Integration and Deployment
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  quality-gate:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 📦 Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: 🟢 Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 22
+        cache: 'npm'
+
+    - name: 📥 Install Dependencies
+      run: npm ci
+
+    - name: 🔍 Type Check
+      run: npm run typecheck
+
+    - name: 🧹 Lint Code
+      run: npm run lint
+
+    - name: 🏗️ Production Build
+      run: npm run build
+
+    - name: 📤 Upload Build Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: production-dist
+        path: dist/
+```
+
+### Pipeline Stages
 
 ```mermaid
-graph TD
-    A[✅ v1.0 Launch] --> B[🔄 v1.1 Enhancements]
-    B --> C[🔮 v2.0 Vision]
-    
-    B1[Dark/Light Theme Toggle] --> B
-    B2[Internationalization i18n] --> B
-    B3[Advanced Analytics Dashboard] --> B
-    
-    C1[VR/360° Film Previews] --> C
-    C2[AI-Powered Content Recommendations] --> C
-    C3[Collaborative Review Tools] --> C
+graph LR
+    A[Push to main] --> B[Checkout Code]
+    B --> C[Install Dependencies]
+    C --> D[TypeScript Check]
+    D --> E[ESLint Validation]
+    E --> F[Production Build]
+    F --> G[Upload Artifact]
+    G --> H[Auto-Deploy to Vercel]
 ```
 
 ---
 
-## 🤝 Contributing
-
-We welcome contributions that align with our cinematic vision!
-
-```diff
-+ How to Contribute:
-
-1. 🍴 Fork the repository
-2. 🌿 Create your feature branch: git checkout -b feature/AmazingCinematicFeature
-3. 💫 Commit your changes: git commit -m '✨ Add amazing cinematic feature'
-4. 📤 Push to the branch: git push origin feature/AmazingCinematicFeature
-5. 🎬 Open a Pull Request with detailed description
-
-+ Contribution Guidelines:
-• Follow existing code style & TypeScript strict mode
-• Add tests for new functionality
-• Update documentation for user-facing changes
-• Use semantic commit messages (feat:, fix:, docs:, etc.)
-```
-
----
-
-## 📜 License
+## 📜 License & Contact
 
 <div align="center">
+
+### License
 
 ```
 MIT License © 2024 AURA CINEMATIC
@@ -459,30 +491,18 @@ The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 ```
 
-[📄 View Full License](LICENSE)
+[📄 View Full License Text](LICENSE)
 
-</div>
+<br/>
 
----
+### Connect
 
-## 📬 Connect & Support
-
-<div align="center">
-
-### Project Repository
-[🔗 github.com/your-username/aura-cinematic-portfolio](https://github.com/your-username/aura-cinematic-portfolio)
-
-### Production Demo
-[🎬 Live Portfolio Showcase](https://aura-cinematic.vercel.app) *(Coming Soon)*
-
-### Contact the Team
-```email
-hello@auracinematic.studio
-```
-
-</div>
-
-<div align="center">
+| Platform | Handle | Link |
+|----------|--------|------|
+| **GitHub** | `@mohdali-dev` | [github.com/mohdali-dev](https://github.com/mohdali-dev) |
+| **LinkedIn** | `mohdali1` | [linkedin.com/in/mohdali1](https://www.linkedin.com/in/mohdali1) |
+| **Hugging Face** | `mohdali1` | [huggingface.co/mohdali1](https://huggingface.co/mohdali1) |
+| **Portfolio** | `mohdali.me` | [mohdali.me](https://www.mohdali.me) |
 
 <br/>
 
@@ -493,6 +513,6 @@ hello@auracinematic.studio
 
 <br/>
 
-<sub>✦ Frame by frame, pixel by pixel, story by story ✦</sub>
+<sub>✦ Frame by frame • Pixel by pixel • Story by story ✦</sub>
 
 </div>
