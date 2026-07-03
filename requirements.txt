@@ -1,0 +1,14 @@
+# System & Node.js Requirements for AURA CINEMATIC Portfolio
+# (Note: In JavaScript/TypeScript ecosystems, runtime package dependencies are managed via package.json)
+
+# Environment Requirements
+node>=18.0.0
+npm>=9.0.0
+
+# Key Platform dependencies (managed by package.json)
+react>=19.0.0
+typescript>=5.8.0
+vite>=6.2.0
+tailwindcss>=4.0.0
+motion>=12.23.0
+lucide-react>=0.400.0

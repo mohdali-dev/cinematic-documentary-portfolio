@@ -1,0 +1,6 @@
+{
+  "name": "Cinematic Documentary Portfolio",
+  "description": "A premium, editorial portfolio website for an award-winning documentary production company, featuring selected works, music documentaries, an about section, and contact facilities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
